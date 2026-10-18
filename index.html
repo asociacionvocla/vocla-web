@@ -1,0 +1,209 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Asociación Vocla</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Asociación Vocla: Coro Vocla, Escuela Coral Vocla y Academia de canto. Preinscripción abierta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: portada negra a sangre; nombre gigante sobre una onda de voces, cinta roja animada hacia la convocatoria, proyectos como filas a todo lo ancho */
+:root{
+  --bg:#1A1326; --ink:#F6F0F4; --muted:#B4A9BC; --line:#3A2E4A;
+  --red:#E2443A; --peach:#F9DCCB;
+  --display:"Big Shoulders Display", Impact, "Arial Narrow", sans-serif;
+  --body:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+body{background:var(--bg) radial-gradient(ellipse 90% 60% at 80% -10%,rgba(141,86,201,.38),transparent 70%) no-repeat;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+a{color:inherit}
+main{overflow-x:clip}
+.in{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Cabecera */
+.top{padding-block:20px}
+.top .in{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:.9rem;letter-spacing:.04em}
+.mark img{width:40px;height:40px;border-radius:50%;background:var(--peach);object-fit:cover}
+.ig{font-size:.9rem;font-weight:600;text-decoration:none;border:1px solid var(--line);padding:.45em .9em;border-radius:999px}
+.ig:hover{border-color:var(--muted)}
+.ig:focus-visible,.mark:focus-visible{outline:2px solid var(--peach);outline-offset:3px}
+
+/* Portada */
+.hero{padding-block:32px 40px;position:relative;overflow:hidden}
+.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--peach);margin:0 0 6px}
+.word{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.82;letter-spacing:-.01em;margin:0;font-size:clamp(6rem,27vw,19rem)}
+.word span{color:var(--red)}
+.wave{display:flex;align-items:center;gap:3px;height:72px;margin:18px 0 22px}
+.wave i{flex:1;min-width:2px;max-width:10px;border-radius:3px;background:var(--line);height:var(--h,30%);transform-origin:center}
+.wave i:nth-child(5n+2){background:#54426B}
+.wave i.hi{background:var(--red)}
+@media (prefers-reduced-motion:no-preference){.wave i{animation:sing 2.4s ease-in-out infinite;animation-delay:var(--d,0s)}}
+@keyframes sing{50%{transform:scaleY(.45)}}
+.claim{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px 40px;align-items:end}
+.claim p{margin:0;font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.4;max-width:30em}
+.claim small{color:var(--muted);font-size:.9rem}
+
+/* Cinta de convocatoria */
+.ribbon{display:block;background:var(--red);color:#FFFFFF;text-decoration:none;overflow:hidden;transform:rotate(-1.5deg);margin:18px -10px;box-shadow:0 10px 30px rgba(226,68,58,.25)}
+.ribbon:focus-visible{outline:3px solid var(--peach);outline-offset:4px}
+.track{display:flex;width:max-content;padding-block:16px}
+.track span{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1;white-space:nowrap;padding-right:1.2em}
+.track span b{color:#111113;font-weight:900}
+@media (prefers-reduced-motion:no-preference){.track{animation:run 26s linear infinite}.ribbon:hover .track{animation-play-state:paused}}
+@keyframes run{to{transform:translateX(-50%)}}
+.ribbon-cta{background:#120C1B;color:#FFFFFF;display:flex;justify-content:center;align-items:center;padding:18px 16px 20px;gap:.55em;text-align:center}
+.ribbon-cta strong{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(1.7rem,6vw,3rem);line-height:1;
+  background:linear-gradient(90deg,#FFFFFF 0%,#FFFFFF 40%,var(--peach) 50%,#FFFFFF 60%,#FFFFFF 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.ribbon-cta em{font-style:normal;color:var(--peach);font-family:var(--display);font-weight:900;font-size:clamp(1.7rem,6vw,3rem);line-height:1}
+.live{flex:none;width:14px;height:14px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(226,68,58,.7)}
+@media (prefers-reduced-motion:no-preference){
+  .ribbon-cta strong{animation:shine 3s linear infinite}
+  .ribbon-cta em{animation:nudge 1.2s ease-in-out infinite}
+  .live{animation:ping 1.6s ease-out infinite}
+}
+@keyframes shine{from{background-position:100% 0}to{background-position:-150% 0}}
+@keyframes nudge{50%{transform:translateX(8px)}}
+@keyframes ping{70%{box-shadow:0 0 0 14px rgba(226,68,58,0)}100%{box-shadow:0 0 0 0 rgba(226,68,58,0)}}
+
+
+/* Navegación */
+.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.more{display:inline-flex;align-items:center;gap:.5em;margin-top:22px;font-weight:600;text-decoration:none;background:var(--ink);color:var(--bg);padding:.7em 1.3em;border-radius:999px}
+.more span{color:var(--red)}
+.more:hover{transform:translateY(-2px)}
+.more:focus-visible{outline:2px solid var(--peach);outline-offset:3px}
+
+/* Proyectos */
+.projects{padding-block:56px 24px}
+.label{font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rows li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:6px 20px;padding-block:20px;border-bottom:1px solid var(--line)}
+.rows h2{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(2.2rem,7vw,4.4rem);line-height:.95;margin:0;min-width:0}
+.rows p{margin:0;color:var(--muted);grid-column:1/-1}
+.rowpic{grid-column:1/-1;margin:10px 0 4px}
+.rowpic img{display:block;width:100%;max-width:640px;height:auto;border-radius:10px;outline:3px solid var(--red);outline-offset:-3px}
+.coro-pic img{outline-color:#FFFFFF}
+.tag{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.3em .7em;border-radius:4px;white-space:nowrap}
+.t-coro{background:#FFFFFF;color:#111113}
+.t-escuela{background:var(--red);color:#FFFFFF}
+.t-academia{background:var(--peach);color:#111113}
+
+
+
+/* Foto de grupo */
+.photo{margin:0;position:relative}
+.photo img{display:block;width:100%;max-width:100%;height:auto}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,var(--bg) 0%,transparent 6%,transparent 92%,var(--bg) 100%);pointer-events:none}
+
+/* Coro Vocla */
+.coro{padding-block:40px 8px}
+.coro .head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin-bottom:22px}
+.coro h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,8vw,5rem);line-height:.9;margin:0}
+.coro-films{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:16px;align-items:start}
+.coro-films .film.v video{aspect-ratio:9/16}
+@media (max-width:640px){.coro-films{grid-template-columns:1fr}.coro-films .film.v{max-width:360px}}
+
+
+/* Escuela Coral */
+.escuela{padding-block:40px 8px}
+.escuela .head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin-bottom:22px}
+.escuela h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,8vw,5rem);line-height:.9;margin:0;color:var(--red)}
+.esc-films{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.esc-films .film.wide{grid-column:1/-1}
+@media (max-width:640px){.esc-films{grid-template-columns:1fr}}
+
+/* Academia de canto */
+.academia{padding-block:24px 40px}
+.academia .head{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 40px;align-items:end;margin-bottom:22px}
+.academia h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,8vw,5rem);line-height:.9;margin:0}
+.academia h2 span{color:var(--peach)}
+.academia .head p{margin:0;color:var(--muted);max-width:30em}
+.films{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.film{margin:0;min-width:0}
+.film video{display:block;width:100%;max-width:100%;aspect-ratio:16/9;background:#000;border-radius:10px;object-fit:cover}
+.film figcaption{margin-top:8px;font-size:.85rem;color:var(--muted)}
+.film video:focus-visible{outline:2px solid var(--peach);outline-offset:3px}
+
+/* En construcción */
+.soon{padding-block:32px 56px}
+.soon .box{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;border:1px dashed #56486A;border-radius:12px;padding:20px}
+.soon .dot{width:12px;height:12px;border-radius:50%;background:var(--peach);margin-top:7px}
+.soon b{display:block;font-weight:600}
+.soon span{color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding-block:24px 32px;color:var(--muted);font-size:.9rem}
+footer .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+footer a{color:var(--peach);text-decoration:none;font-weight:600}
+footer a:hover{text-decoration:underline}
+</style>
+
+<header class="top">
+  <div class="in">
+    <a class="mark" href="./"><img src="data:image/jpeg;base64,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" alt="">Asociación Vocla</a>
+    <nav class="nav"><a class="ig" href="media.html">Media</a><a class="ig" href="https://www.instagram.com/asociacionvocla/" target="_blank" rel="noopener">Instagram ↗</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="in">
+      <p class="eyebrow">Coro · Escuela coral · Academia de canto</p>
+      <h1 class="word">Voc<span>la</span></h1>
+      <div class="wave" id="wave" aria-hidden="true"></div>
+      <div class="claim">
+        <p>VOCLA (Voz, Coro y Lírico de Almería)</p>
+        <small>Web en construcción.</small>
+      </div>
+    </div>
+  </section>
+
+  <figure class="photo"><img src="media/grupo.jpg" alt="Integrantes de la Asociación Vocla en el escenario de un teatro" loading="eager"></figure>
+
+  <a class="ribbon" href="convocatoria.html" aria-label="Convocatoria abierta 2026: ver la convocatoria y preinscribirse">
+    <div class="track" aria-hidden="true">
+      <span>En construcción <b>✦</b> En construcción <b>✦</b> En construcción <b>✦</b> En construcción <b>✦</b></span>
+      <span>En construcción <b>✦</b> En construcción <b>✦</b> En construcción <b>✦</b> En construcción <b>✦</b></span>
+    </div>
+    <div class="ribbon-cta"><span class="live" aria-hidden="true"></span><strong>Convocatoria abierta 2026</strong><em aria-hidden="true">→</em></div>
+  </a>
+
+  <section class="projects">
+    <div class="in">
+      <p class="label">Quiénes somos</p>
+      <ul class="rows">
+        <li><h2>Escuela Coral Vocla</h2><span class="tag t-escuela">Infantil y juvenil</span><p>Coros infantil y juvenil.</p></li>
+        <li><h2>Coro Vocla</h2><span class="tag t-coro">Adultos</span></li>
+        <li><h2>Academia de canto</h2><span class="tag t-academia">Formación</span><p>Formación vocal.</p></li>
+      </ul>
+      <a class="more" href="media.html">Ver fotos y vídeos <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="soon">
+    <div class="in">
+      <div class="box"><span class="dot" aria-hidden="true"></span><div><b>Estamos preparando la nueva web</b><span>Muy pronto: conciertos, agenda, fotos y vídeos. Mientras tanto, síguenos en Instagram.</span></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="in">
+    <span>Asociación Vocla</span>
+    <a href="https://www.instagram.com/asociacionvocla/" target="_blank" rel="noopener">@asociacionvocla</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var w=document.getElementById("wave"); if(!w) return;
+  var n=64, html="";
+  for(var i=0;i<n;i++){
+    // forma de onda: varias "voces" sumadas, estable entre recargas
+    var x=i/n, v=0.55*Math.abs(Math.sin(x*Math.PI*3.1))+0.35*Math.abs(Math.sin(x*Math.PI*7.3+1))+0.1;
+    var h=Math.round(18+v*82), hi=(i%9===4)?' class="hi"':'';
+    html+='<i'+hi+' style="--h:'+h+'%;--d:-'+(i*0.07).toFixed(2)+'s"></i>';
+  }
+  w.innerHTML=html;
+})();
+</script>
+
+</body></html>

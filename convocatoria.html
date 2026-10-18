@@ -1,0 +1,265 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Convocatoria Vocla</title>
+<meta name="description" content="Preinscripción para la Escuela Coral Vocla y el Coro Vocla.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+/* Layout: one narrow column, hero sobre un pentagrama, dos tarjetas de coro, tres pasos, botón final */
+:root{
+  --bg:#FFFFFF; --surface:#FDF1EA; --ink:#1D1D21; --muted:#5E5A5C;
+  --line:#EBDCD3; --accent:#E2443A; --accent-ink:#FFFFFF; --kids:#B8322A; --peach:#F9DCCB;
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#161618; --surface:#222124; --ink:#F2EEEC; --muted:#ABA5A6;
+  --line:#35323A; --accent:#F0584D; --accent-ink:#FFFFFF; --kids:#F7907F; --peach:#F9DCCB; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#161618; --surface:#222124; --ink:#F2EEEC; --muted:#ABA5A6;
+  --line:#35323A; --accent:#F0584D; --accent-ink:#FFFFFF; --kids:#F7907F; --peach:#F9DCCB; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 56px;display:flex;flex-direction:column;gap:48px}
+
+.hero{position:relative;padding-block:28px 8px}
+.titlebar{position:relative;padding-block:46px;padding-left:64px}
+.titlebar .staff{position:absolute;left:0;right:0;top:50%;height:89px;transform:translateY(-50%);pointer-events:none}
+.titlebar .lines{position:absolute;inset:0;background:repeating-linear-gradient(to bottom,#E3D2C8 0 1.5px,transparent 1.5px 22px);
+  -webkit-mask-image:linear-gradient(90deg,#000 75%,transparent);mask-image:linear-gradient(90deg,#000 75%,transparent)}
+.titlebar .clef{position:absolute;left:0;top:-31px;fill:#C9AE9F}
+.titlebar .eyebrow{position:relative;display:inline-block;color:var(--ink);background:var(--bg);padding:.1em .5em;margin-left:-.1em;font-size:clamp(1.1rem,4.6vw,1.5rem);letter-spacing:.14em;white-space:nowrap;line-height:1.2}
+.hero>*{position:relative}
+.back{display:inline-block;margin-bottom:14px;font-size:.9rem;font-weight:600;color:var(--accent);text-decoration:none}
+.back:hover{text-decoration:underline}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.logo{width:72px;height:72px;border-radius:50%;background:var(--peach);display:block;object-fit:cover;box-shadow:0 0 0 3px var(--bg),0 0 0 4px var(--line)}
+.brand-name{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
+.brand-name span{display:block;font-weight:500;letter-spacing:.02em;text-transform:none;color:var(--muted);font-size:.85rem}
+.eyebrow{font-size:1.1rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.3rem,7vw,3.6rem);line-height:1.08;margin:.35em 0 .4em;text-wrap:balance}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0}
+.lead strong{color:var(--ink)}
+.free{display:inline-flex;align-items:center;gap:.5em;margin-top:20px;padding:.45em .9em;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-weight:600;font-size:.95rem}
+.free::before{content:"♪";color:var(--accent);font-size:1.1em}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.badges .free{margin-top:0}
+.free.req::before{content:"𝄞";color:var(--kids)}
+
+.trial{display:flex;gap:14px;align-items:flex-start;margin-top:24px;padding:16px 18px;border-radius:14px;background:var(--peach);color:#1D1D21}
+.trial-icon{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#E2443A;color:#FFFFFF;font-size:1.3rem;line-height:1}
+.trial div{min-width:0;display:flex;flex-direction:column;gap:2px}
+.trial strong{font-family:var(--display);font-weight:400;font-size:1.2rem;line-height:1.25}
+.trial span{font-size:.98rem;color:#3E3A3C}
+.trial .mail{color:#1D1D21;font-weight:700;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+body.editing .trial [data-edit]{outline-color:#B8322A}
+h2{font-family:var(--display);font-weight:400;font-size:1.6rem;line-height:1.2;margin:0 0 16px;text-wrap:balance}
+
+.choirs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.choir{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.choir .tag{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.choir.kids .tag{color:var(--kids)} .choir.adults .tag{color:var(--accent)}
+.choir h3{font-family:var(--display);font-weight:400;font-size:1.35rem;margin:0}
+.choir p{margin:0;color:var(--muted)}
+.choir h3.brandname{align-self:flex-start;background:#E2443A;color:#FFFFFF;padding:.2em .6em .25em;border-radius:6px;line-height:1.25}
+.choir h3.brandname.bw{background:#111113;color:#FFFFFF;box-shadow:0 0 0 1px var(--line)}
+/* Tarjetas con el color de cada coro */
+.choir.kids{background:#E2443A;border-color:#E2443A;color:#FFFFFF}
+.choir.adults{background:#111113;border-color:#111113;color:#FFFFFF}
+.choir.kids .tag,.choir.adults .tag{color:rgba(255,255,255,.85)}
+.choir.kids p,.choir.adults p{color:rgba(255,255,255,.88)}
+.choir.kids h3.brandname{background:#FFFFFF;color:#C8352C}
+.choir.adults h3.brandname.bw{background:#FFFFFF;color:#111113;box-shadow:none}
+body.editing .choir [data-edit]{outline-color:#FFFFFF}
+.voices{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;padding:0;list-style:none}
+.voices li{font-size:.8rem;font-weight:500;padding:.2em .65em;border:1px solid var(--line);border-radius:6px;color:var(--muted)}
+
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center;counter-increment:s}
+.steps li::before{content:counter(s);background:var(--peach);color:#1D1D21;border-color:transparent;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);font-family:var(--display);font-size:1.15rem}
+.steps b{display:block;font-weight:600}
+.steps span{color:var(--muted)}
+
+.cta{background:var(--accent);color:var(--accent-ink);border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.cta h2{margin:0;color:var(--accent-ink)}
+.cta p{margin:0;opacity:.8;max-width:32em}
+.btn{display:inline-flex;align-items:center;gap:.6em;background:#FFFFFF;color:#1D1D21;font-weight:700;font-size:1.05rem;text-decoration:none;padding:.85em 1.5em;border-radius:999px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid #FFFFFF;outline-offset:3px}
+.btn[aria-disabled="true"]{opacity:.6;pointer-events:none}
+.note{font-size:.85rem;opacity:.7}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn-kids{background:#FFFFFF;color:#C8352C}
+.btn-adults{background:#111113;color:#FFFFFF}
+
+footer{font-size:.85rem;color:var(--muted);text-align:center}
+.ig{color:var(--accent);font-weight:600;text-decoration:none}
+.ig:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+/* Edición */
+.editbar{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px;max-width:calc(100vw - 32px);background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:10px;box-shadow:0 6px 24px rgba(0,0,0,.15);font-family:var(--body);font-size:.9rem}
+.editbar button{font:inherit;font-weight:600;border-radius:999px;padding:.5em 1em;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.editbar button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.editbar button:focus-visible,.editbar input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.editbar label{display:flex;flex-direction:column;gap:2px;font-size:.75rem;color:var(--muted);flex:1 1 220px;min-width:0}
+.editbar input{font:inherit;font-size:.85rem;padding:.45em .6em;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);min-width:0}
+.editbar .msg{font-size:.8rem;color:var(--muted);flex-basis:100%;text-align:right}
+body.editing [data-edit]{outline:1.5px dashed var(--accent);outline-offset:3px;border-radius:3px;cursor:text}
+body.editing [data-edit]:focus{outline-style:solid}
+body.editing .btn,body.editing #formNote{pointer-events:auto;opacity:1}
+body.editing .btn{cursor:text}
+
+</style>
+<div class="wrap">
+  <header class="hero">
+    <a class="back" href="./">← Volver a vocla.es</a>
+    <div class="brand"><img class="logo" src="data:image/jpeg;base64,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" alt="Logotipo de la Asociación Vocla"><div class="brand-name">Asociación Vocla<span>@asociacionvocla</span></div></div>
+    <div class="titlebar"><div class="staff" aria-hidden="true"><div class="lines"></div><svg class="clef" viewBox="120.0 -900.0 422.0 1191.0" width="53.1" height="150.0" aria-hidden="true"><path transform="scale(1,-1)" d="M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z"/></svg></div><div class="eyebrow" data-edit="">Convocatoria</div></div>
+    <div class="trial"><span class="trial-icon" aria-hidden="true">♫</span><div><strong data-edit="">Ven a probar</strong><span data-edit="">Escríbenos a <a class="mail" href="mailto:asociacionvocla@gmail.com">asociacionvocla@gmail.com</a></span></div></div>
+  </header>
+
+  <section>
+    <h2 data-edit="">Nuestros coros</h2>
+    <div class="choirs">
+      <article class="choir kids">
+        <span class="tag" data-edit="">Coro infantil · coro juvenil</span>
+        <h3 class="brandname" data-edit="">Escuela Coral Vocla</h3>
+        <p data-edit="">Coros infantil y juvenil</p>
+      </article>
+      <article class="choir adults">
+        <span class="tag" data-edit="">Coro de mayores · Voces mixtas</span>
+        <h3 class="brandname bw" data-edit="">Coro Vocla</h3>
+        <p data-edit="">Coro adulto</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-edit="">Cómo funciona</h2>
+    <ol class="steps">
+      <li><div><b data-edit="">Rellena la preinscripción</b><span data-edit="">Solo te llevará un par de minutos.</span></div></li>
+      <li><div><b data-edit="">Te contactamos</b></div></li>
+    </ol>
+  </section>
+
+  <section class="cta" id="preinscripcion">
+    <h2 data-edit="">Preinscríbete este mes</h2>
+    <p data-edit="">Las plazas son limitadas. Apúntate cuanto antes y te avisamos para la prueba.</p>
+    <div class="btns"><a class="btn btn-kids" id="formBtnKids" data-form="kids" href="#" target="_blank" rel="noopener"><span data-edit="">Preinscripción Escuela Coral Vocla</span> →</a><a class="btn btn-adults" id="formBtnAdults" data-form="adults" href="#" target="_blank" rel="noopener"><span data-edit="">Preinscripción Coro Vocla</span> →</a></div>
+    <span class="note" id="formNote" data-edit="" hidden="">Los formularios estarán disponibles muy pronto.</span>
+  </section>
+
+  <footer><span data-edit="">Escuela Coral Vocla · Coro Vocla</span><br><a class="ig" href="https://www.instagram.com/asociacionvocla/" target="_blank" rel="noopener">@asociacionvocla</a><br><span data-edit="">Te contactaremos por teléfono o correo con los datos que nos dejes.</span></footer>
+</div>
+<script type="application/json" id="config">{"kids":"https://forms.gle/h2xDpu1H8TqgzLqMA","adults":"https://forms.gle/sads3wABo3NZmQxQA"}</script>
+<script>
+(function(){
+  var cfgEl=document.getElementById("config");
+  var cfg={kids:"",adults:""};
+  try{var p=JSON.parse(cfgEl.textContent)||{};cfg.kids=p.kids||"";cfg.adults=p.adults||""}catch(e){}
+  var btns=document.querySelectorAll("[data-form]"), note=document.getElementById("formNote");
+
+  function applyForm(){
+    var missing=false;
+    btns.forEach(function(b){var u=cfg[b.getAttribute("data-form")];
+      if(u){b.href=u;b.removeAttribute("aria-disabled")}else{b.setAttribute("href","#");b.setAttribute("aria-disabled","true");missing=true}});
+    note.hidden=!missing;
+  }
+  applyForm();
+
+  // Solo deja negrita, cursiva y saltos de línea
+  function clean(html){
+    var t=document.createElement("template");t.innerHTML=html;
+    (function walk(n){
+      Array.prototype.slice.call(n.childNodes).forEach(function(c){
+        if(c.nodeType===1){
+          walk(c);
+          var tag=c.tagName.toLowerCase();
+          if(["strong","b","em","i","br"].indexOf(tag)<0){
+            while(c.firstChild)c.parentNode.insertBefore(c.firstChild,c);c.remove();
+          }else{while(c.attributes.length)c.removeAttribute(c.attributes[0].name)}
+        }else if(c.nodeType!==3){c.remove()}
+      });
+    })(t.content);
+    return t.innerHTML.replace(/(<br>\s*)+$/,"").trim();
+  }
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+  window.claude && window.claude.use && Promise.all([window.claude.use("user"),window.claude.use("artifact")]).then(function(r){
+    var user=r[0], art=r[1];
+    if(!art) return;
+    var can = user && typeof user.canEdit==="function" ? user.canEdit() : null;
+    Promise.resolve(can).then(function(ok){ if(ok===false) return; buildBar(art) });
+  }).catch(function(){});
+
+  function buildBar(art){
+    var bar=document.createElement("div");bar.className="editbar";bar.id="editbar";
+    document.body.appendChild(bar);
+    var snapshot=null;
+    function idle(){
+      bar.innerHTML='<button type="button" id="editStart">✎ Editar página</button>';
+      bar.querySelector("#editStart").onclick=start;
+    }
+    function start(){
+      snapshot=Array.prototype.map.call(document.querySelectorAll("[data-edit]"),function(el){return el.innerHTML});
+      document.body.classList.add("editing");
+      document.querySelectorAll("[data-edit]").forEach(function(el){el.contentEditable="true"});
+      note.hidden=false;
+      btns.forEach(function(b){b.addEventListener("click",block,true)});
+      bar.innerHTML='<label for="formKidsInput">Formulario Escuela Coral Vocla<input id="formKidsInput" type="url" placeholder="https://forms.gle/..."></label>'+
+        '<label for="formAdultsInput">Formulario Coro Vocla<input id="formAdultsInput" type="url" placeholder="https://forms.gle/..."></label>'+
+        '<button type="button" id="editCancel">Cancelar</button><button type="button" class="primary" id="editSave">Guardar cambios</button>'+
+        '<span class="msg" id="editMsg">Haz clic en cualquier texto marcado para cambiarlo.</span>';
+      bar.querySelector("#formKidsInput").value=cfg.kids||"";bar.querySelector("#formAdultsInput").value=cfg.adults||"";
+      bar.querySelector("#editCancel").onclick=cancel;
+      bar.querySelector("#editSave").onclick=save;
+    }
+    function block(e){e.preventDefault()}
+    function stop(){
+      document.body.classList.remove("editing");
+      document.querySelectorAll("[data-edit]").forEach(function(el){el.removeAttribute("contenteditable")});
+      btns.forEach(function(b){b.removeEventListener("click",block,true)});
+      applyForm();
+    }
+    function cancel(){
+      document.querySelectorAll("[data-edit]").forEach(function(el,i){el.innerHTML=snapshot[i]});
+      stop();idle();
+    }
+    function save(){
+      var msg=bar.querySelector("#editMsg");
+      var kids=bar.querySelector("#formKidsInput").value.trim(), adults=bar.querySelector("#formAdultsInput").value.trim();
+      if((kids && !/^https:\/\//i.test(kids))||(adults && !/^https:\/\//i.test(adults))){msg.textContent="Los enlaces tienen que empezar por https://";return}
+      document.querySelectorAll("[data-edit]").forEach(function(el){el.innerHTML=clean(el.innerHTML)});
+      cfg.kids=kids;cfg.adults=adults;
+      msg.textContent="Guardando…";
+      bar.querySelectorAll("button").forEach(function(b){b.disabled=true});
+      // Reconstruye el documento a partir de las piezas fijas y los textos editados
+      var parts=[];
+      Array.prototype.forEach.call(document.body.childNodes,function(n){
+        if(n.nodeType===3){parts.push(n.textContent.trim()?esc(n.textContent):"\n");return}
+        if(n.nodeType!==1||n.id==="editbar")return;
+        if(n.id==="config"){parts.push('<script type="application/json" id="config">'+JSON.stringify({kids:cfg.kids,adults:cfg.adults}).replace(/</g,"\\u003c")+"<\/script>");return}
+        if(n.classList.contains("wrap")){
+          var c=n.cloneNode(true);
+          c.querySelectorAll("[contenteditable]").forEach(function(el){el.removeAttribute("contenteditable")});
+          c.querySelectorAll("[data-form]").forEach(function(b){b.setAttribute("href","#");b.removeAttribute("aria-disabled")});
+          c.querySelector("#formNote").hidden=true;
+          parts.push(c.outerHTML);return;
+        }
+        parts.push(n.outerHTML);
+      });
+      var reset=(document.head.querySelector("style")||{}).textContent||"";
+      var html='<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+reset+'</style></head><body>'+parts.join("")+'</body></html>';
+      art.publish(html).then(function(){msg.textContent="Guardado"}).catch(function(err){
+        var code=err&&err.code;
+        msg.textContent = code==="conflict" ? "Otra persona guardó a la vez. La página se recargará con su versión." :
+          (code==="not_granted"||code==="not_writer") ? "No tienes permiso para guardar esta página." :
+          "No se pudo guardar. Inténtalo de nuevo en un momento.";
+        bar.querySelectorAll("button").forEach(function(b){b.disabled=false});
+      });
+    }
+    idle();
+  }
+})();
+</script>
+</body></html>
